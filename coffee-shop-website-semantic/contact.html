@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="" />
-  <style></style>
-  <script src=""></script>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Best Coffee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About us</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <header>
-    <h1>Contact us</h1>
-    </header>
-    <img src="img_la.jpg" alt="LA" style="width: 100%" />
-    <section>
-    <div class="">
-      <li>+49 17128917289</li>
-      <li>Test Address</li>
-      <figure>
-      <img
-        src="ipexels-chevanon-302901.jpg"
-        alt="Thanks Chevanon Photography"
-        style="width: 100%"
-      />
-      </figure>
-      </section>
+  </nav>
+
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <section class="hero">
+    <img src="img_la.jpg" alt="Los Angeles coffee shop" style="width:100%; height:auto;">
+  </section>
+
+  <main>
+    <section class="contact-info">
+      <h2>Our Details</h2>
+      <ul>
+        <li>📞 +49 171 28917289</li>
+        <li>📍 Test Address</li>
+      </ul>
+      <img src="pexels-chevanon-302901.jpg" alt="Cup of coffee" style="width:100%; height:auto;">
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
       <form>
-        <label for="name">name</label><br />
-        <label for="email">email</label><br />
-        <label for="message">message</label><br />
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
       </form>
-    </div>
-  </body>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Best Coffee</p>
+  </footer>
+
+</body>
 </html>

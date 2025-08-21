@@ -1,0 +1,78 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.window {
+  position: fixed;          
+  top: 50%;                  
+  left: 50%;                
+  transform: translate(-50%, -50%);
+  background:dimgray;         
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow:0cap;
+  display: flex;             
+  align-items: center;
+  width: 400px;
+  box-sizing: border-box;   
+    
+}
+.window-header {
+  background: #194682;
+  color: white;
+  padding: 10px;
+  width: 400px;
+  box-sizing: border-box;   
+
+}
+
+.window-header .title {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: #194682;
+  width: 400px;
+  box-sizing: border-box;   
+  padding: 5px;
+  margin: 0;
+}
+
+.window.border {
+  margin-left: 10px;
+  float: left
+}
+.window-body {
+  padding: 20px;
+  border: 0cap;
+  margin: auto;
+  color: black;
+  width: 400px;
+  box-sizing: border-box;     
+}
+.window-footer{
+  padding: 2px;
+  background-color: #f0f0f0; 
+  text-align: center;
+  }
+  .cancel-btn{
+  padding: 2px;
+  background-color: #f0f0f0; 
+  text-align: center;
+  }
+  .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
+}

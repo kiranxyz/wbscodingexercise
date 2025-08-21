@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fdfdfd;
+  line-height: 1.6;
+}
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #444;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+header nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+header nav a:hover {
+  color: #ff0077;
+}
+
+.hero {
+  background: url('https://picsum.photos/1600/800?blur=2') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.btn {
+  background: linear-gradient(135deg, #ff0077, #ff6a00);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.services h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.service-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+.gallery {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.gallery h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+footer {
+  background: #111;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+footer nav a {
+  color: #ddd;
+  text-decoration: none;
+}
+footer nav a:hover {
+  color: #ff0077;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
